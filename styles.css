@@ -1,0 +1,310 @@
+html{
+    font-size: 16px;
+    font-family: jurta, sans-serif;
+    color: #1e1d1d;
+}
+body{
+    background-image: url("./resources/Basic Patterns-03.png");
+    background-size: 100px;
+    background-attachment: fixed;
+    background-color: #f9f9f2;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER START */
+.header-container{
+    display: flex;
+    flex-wrap: wrap;
+    height: 125px;
+    width: 100%;
+    margin: auto;
+    position: fixed;
+    top: 0;
+    background-color:#f9f9f2;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 100;
+    border-bottom: 2px solid #1e1d1d;
+    border-top:  2px solid #1e1d1d;
+}
+.logo img{
+    height: 95px;
+    width: 200px;
+}
+.link-container{
+    display: inline-flex;
+    width: 700px;
+    justify-content: space-around;
+}
+.link-container .link,
+.link-container a:hover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.link-container a{
+    color: #1e1d1d;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+.link-container a:hover{
+    color: #a03022;
+    font-weight: bold;
+    transform: scale(1.3);
+    cursor: pointer;
+    border-radius: 2px;
+}
+/* HEADER END */
+
+/* MISSION START */
+.section-container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-image: url("./resources/tim-wildsmith-o2fc-C-Uotw-unsplash.jpg");
+    background-attachment: fixed;
+    background-size: cover; 
+}
+.mission-container{
+    height: 250px;
+    margin: 250px 0 100px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mission-text{
+    margin-top: 30px;
+    background-color: #f9f9f2;
+    text-align: center;
+    width: 90%;
+    padding: 0 30px;
+    border: double 4px #1e1d1d;
+}
+h1{
+    font-family: adventure island, sans-serif;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+h3{
+    font-size: 2rem;
+}
+@media only screen and (max-width: 900px) {
+    .mission-container{
+        margin: 215px 0 75px;
+    }
+    h1{
+        font-size: 2rem;
+        line-height: 2rem;
+    }
+    h3{
+        font-size: 1.75rem;
+    }
+    .mission-text{
+        margin: 0;
+        padding: 0 10px;
+    }
+}
+@media only screen and (max-width: 473px){
+    .mission-container{
+        margin: 250px 0 100px;
+    }
+}
+/* MISSION END */
+
+/* SAMPLES START */
+.sample-section{
+    padding: 40px 0;
+}
+h2{
+    text-align: center;
+    font-size: 1.75rem;
+    width: 390px;
+    height: 65px;
+    margin: auto;
+    padding-top: 30px;
+    line-height: 75px;
+    border-bottom: double 4px #1e1d1d;
+}
+.sample-container{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.figure{
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+}
+.figure img{
+    width: 200px;
+    transition: all 0.2s ease-in-out;
+    box-shadow: 2px 2px 5px #2c2b2b;  
+}
+.figure img:hover{
+    transform: scale(1.4);
+    cursor: pointer;
+}
+figcaption{
+    text-align: center;
+    font-size: 1.25rem;
+}
+@media only screen and (max-width: 1119px){
+    .figure img:hover{
+        transform: scale(1.3);
+        cursor: pointer;
+    }
+}
+/* SAMPLES END */
+
+/* JOINS US START */
+.join-us-container{
+    height: auto;
+    width: 100%;
+    margin: auto;
+    background-image: url("./resources/tom-hermans-9BoqXzEeQqM-unsplash.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px 0 80px;
+}
+.join-container{
+    width: 75%;
+    background-color: #f9f9f2;
+    border-radius: 2px;
+    border: double 4px #1e1d1d;
+    text-align: center;
+    display: flex;
+    flex-flow: column;
+}
+.join{
+    font-size: 2.25rem;
+    font-family: adventure island, sans-serif;
+    padding: 0;
+    border-bottom: none;
+    width: auto;
+}
+.join-blurb{
+    font-size: 1.75rem;
+    margin: 0;
+}
+.join-blurb-support{
+    font-size: 1.50rem;
+    line-height: 1.75rem;
+    padding: 0 20px;
+}
+.join-blurb-support a{
+    color:  #1e1d1d; 
+}
+.join-blurb-support a:hover{
+    transition: all 0.2s ease-in-out;
+    color: #a03022;
+    cursor: pointer;
+}
+.sign-up{
+    font-size: 1.75rem;
+}
+.one-day{
+    font-size: 1.25rem;
+}
+.email-form{
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+}
+.email,
+.first-name,
+.last-name,
+.honorific{
+    display: flex;
+    flex-flow: column;
+    width: 200px;
+    text-align: left;
+    letter-spacing: .1rem;
+    padding-bottom: 15px;
+}
+label{
+    margin-top: .5rem;
+}
+.honorific{
+    width: 100px;
+}
+.submit-button{
+    display: flex;
+    height: 30px;
+    align-content: center;
+}
+.submit{
+    font-family: jurta, sans-serif;
+    font-size: 1rem;
+    letter-spacing: .1rem;
+    transition: all 0.2s ease-in-out;
+}
+.submit:hover{
+    background-color: #a03022;
+    color: #f9f9f2;
+    border-radius: 2px;
+    cursor: pointer;
+}
+@media only screen and (max-width: 900px) {
+    .join{
+        font-size: 1.75rem;
+    }
+    .join-blurb{
+        font-size: 1.5rem;
+    }
+}
+/* JOIN US END */
+
+/* FOOTER START */
+.footer-container{
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #f9f9f2;
+    border-bottom: 2px solid #1e1d1d;
+    border-top:  2px solid #1e1d1d;
+    justify-content: space-around;
+    align-items: center;
+}
+.ccbcc-email a{
+    color: #2c2b2b;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    font-size: 1.25rem;
+}
+.ccbcc-email a:hover{
+    color: #a03022;
+    display: flex;
+    transform: scale(1.2);
+}
+.footer-logo img{
+    height: 55px;
+    width: 160px;
+    margin: 20px 0;
+}
+@media only screen and (max-width: 561px) {
+    .footer-container{
+        display: block;
+        text-align: center;
+    }
+    .footer-logo img{
+        height: 35px ;
+        width: 140px;
+        margin: 0;
+    }  
+}
+/* FOOTER END */
