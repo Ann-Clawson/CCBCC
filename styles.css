@@ -1,6 +1,6 @@
 html{
     font-size: 16px;
-    font-family: jurta, sans-serif;
+    font-family: Urbanist, sans-serif;
     color: #1e1d1d;
 }
 body{
@@ -86,7 +86,7 @@ body{
     border: double 4px #1e1d1d;
 }
 h1{
-    font-family: adventure island, sans-serif;
+    font-family: Rubik Mono One, sans-serif;
     font-size: 3rem;
     line-height: 3rem;
 }
@@ -190,7 +190,7 @@ figcaption{
 }
 .join{
     font-size: 2.25rem;
-    font-family: adventure island, sans-serif;
+    font-family: Rubik Mono One, sans-serif;
     padding: 0;
     border-bottom: none;
     width: auto;
@@ -247,7 +247,7 @@ label{
     align-content: center;
 }
 .submit{
-    font-family: jurta, sans-serif;
+    font-family: Urbanist, sans-serif;
     font-size: 1rem;
     letter-spacing: .1rem;
     transition: all 0.2s ease-in-out;
