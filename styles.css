@@ -195,6 +195,7 @@ figcaption{
     border-bottom: none;
     width: auto;
     height: auto;
+    line-height: 4rem;
 }
 .join-blurb{
     font-size: 1.75rem;
